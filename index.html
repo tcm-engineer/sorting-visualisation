@@ -1,0 +1,176 @@
+<!-- DOCTYPE declaration -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Content-Type specifies the character encoding for the document -->
+        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> 
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+        <title>Sorting Algorithms</title>  
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="resources/images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="resources/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="resources/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="resources/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="resources/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="resources/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="resources/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="resources/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="resources/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="resources/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicon-16x16.png">
+        <link rel="manifest" href="resources/images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+      
+    <body>
+        
+        <div class="topRow">
+            <h1>Sorting Algorithms Visualisation</h1>       
+        </div>
+
+        <h3>
+            <div class="secRow">
+                <button class="button" onclick="randColumns()">Randomise Columns</button>
+
+                <div class="rangeSlider">                
+                    Range: <input type="range" min="1" max="100" value="100" id="sliderRange" class="slider" onchange="sliderControl()">
+                    <span id="rangeVal">100</span>
+                </div>
+
+                <div class="speedSlider">
+                    Speed: <input type="range" min="1" max="100" value="50" id="colSpeed" class="slider" onchange="columnSpeed()">
+                    <span id="speedVal">50</span>
+                </div>
+
+                <button class="button endRow" onclick='window.location.href="about.html"'>About</button>
+
+            </div>        
+            
+            <div class="thirdRow">
+                <button id="bubbleSort" class="button buttonAlgorithmDefault" onclick="bubbleSort()">Bubble Sort</button>
+                <button id="selectionSort" class="button buttonAlgorithmDefault" onclick="selectionSort()">Selection Sort</button>
+                <button id="insertionSort" class="button buttonAlgorithmDefault" onclick="insertionSort()">Insertion Sort</button>
+                <button id="quickSort" class="button buttonAlgorithmDefault" onclick="quickSort()">Quick Sort</button>
+                <button id="heapSort" class="button buttonAlgorithmDefault" onclick="heapSort()">Heap Sort</button>
+
+                <button id="stop" class="button buttonStopDefault" value="On" onclick="stop()">Stop</button>
+
+            </div>
+        </h3>
+
+        <!-- Table -->
+        <div class="columns">
+            <div class="col0" id="c0" ></div>
+            <div class="col1" id="c1" ></div>
+            <div class="col2" id="c2" ></div>
+            <div class="col3" id="c3" ></div>
+            <div class="col4" id="c4" ></div>
+            <div class="col5" id="c5" ></div>
+            <div class="col6" id="c6" ></div>
+            <div class="col7" id="c7" ></div>
+            <div class="col8" id="c8" ></div>
+            <div class="col9" id="c9" ></div>
+            <div class="col10" id="c10" ></div>
+            <div class="col11" id="c11" ></div>
+            <div class="col12" id="c12" ></div>
+            <div class="col13" id="c13" ></div>
+            <div class="col14" id="c14" ></div>
+            <div class="col15" id="c15" ></div>
+            <div class="col16" id="c16" ></div>
+            <div class="col17" id="c17" ></div>
+            <div class="col18" id="c18" ></div>
+            <div class="col19" id="c19" ></div>
+            <div class="col20" id="c20" ></div>
+            <div class="col21" id="c21" ></div>
+            <div class="col22" id="c22" ></div>
+            <div class="col23" id="c23" ></div>
+            <div class="col24" id="c24" ></div>
+            <div class="col25" id="c25" ></div>
+            <div class="col26" id="c26" ></div>
+            <div class="col27" id="c27" ></div>
+            <div class="col28" id="c28" ></div>
+            <div class="col29" id="c29" ></div>
+            <div class="col30" id="c30" ></div>
+            <div class="col31" id="c31" ></div>
+            <div class="col32" id="c32" ></div>
+            <div class="col33" id="c33" ></div>
+            <div class="col34" id="c34" ></div>
+            <div class="col35" id="c35" ></div>
+            <div class="col36" id="c36" ></div>
+            <div class="col37" id="c37" ></div>
+            <div class="col38" id="c38" ></div>
+            <div class="col39" id="c39" ></div>
+            <div class="col40" id="c40" ></div>
+            <div class="col41" id="c41" ></div>
+            <div class="col42" id="c42" ></div>
+            <div class="col43" id="c43" ></div>
+            <div class="col44" id="c44" ></div>
+            <div class="col45" id="c45" ></div>
+            <div class="col46" id="c46" ></div>
+            <div class="col47" id="c47" ></div>
+            <div class="col48" id="c48" ></div>
+            <div class="col49" id="c49" ></div>
+            <div class="col50" id="c50" ></div>
+            <div class="col51" id="c51" ></div>
+            <div class="col52" id="c52" ></div>
+            <div class="col53" id="c53" ></div>
+            <div class="col54" id="c54" ></div>
+            <div class="col55" id="c55" ></div>
+            <div class="col56" id="c56" ></div>
+            <div class="col57" id="c57" ></div>
+            <div class="col58" id="c58" ></div>
+            <div class="col59" id="c59" ></div>
+            <div class="col60" id="c60" ></div>
+            <div class="col61" id="c61" ></div>
+            <div class="col62" id="c62" ></div>
+            <div class="col63" id="c63" ></div>
+            <div class="col64" id="c64" ></div>
+            <div class="col65" id="c65" ></div>
+            <div class="col66" id="c66" ></div>
+            <div class="col67" id="c67" ></div>
+            <div class="col68" id="c68" ></div>
+            <div class="col69" id="c69" ></div>
+            <div class="col70" id="c70" ></div>
+            <div class="col71" id="c71" ></div>
+            <div class="col72" id="c72" ></div>
+            <div class="col73" id="c73" ></div>
+            <div class="col74" id="c74" ></div>
+            <div class="col75" id="c75" ></div>
+            <div class="col76" id="c76" ></div>
+            <div class="col77" id="c77" ></div>
+            <div class="col78" id="c78" ></div>
+            <div class="col79" id="c79" ></div>
+            <div class="col80" id="c80" ></div>
+            <div class="col81" id="c81" ></div>
+            <div class="col82" id="c82" ></div>
+            <div class="col83" id="c83" ></div>
+            <div class="col84" id="c84" ></div>
+            <div class="col85" id="c85" ></div>
+            <div class="col86" id="c86" ></div>
+            <div class="col87" id="c87" ></div>
+            <div class="col88" id="c88" ></div>
+            <div class="col89" id="c89" ></div>
+            <div class="col90" id="c90" ></div>
+            <div class="col91" id="c91" ></div>
+            <div class="col92" id="c92" ></div>
+            <div class="col93" id="c93" ></div>
+            <div class="col94" id="c94" ></div>
+            <div class="col95" id="c95" ></div>
+            <div class="col96" id="c96" ></div>
+            <div class="col97" id="c97" ></div>
+            <div class="col98" id="c98" ></div>
+            <div class="col99" id="c99" ></div>
+        </div>
+
+        
+        <script src="resources/js/script.js"></script>
+    </body>
+
+</html>
+

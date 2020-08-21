@@ -1,0 +1,241 @@
+/* Body */
+body {
+    background-color: rgb(195, 248, 255);
+}
+
+/* Heading styles */
+h1,h2{
+    text-align:center;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+
+/* Div positionings */
+.topRow{
+    position: relative;
+    top: 0px;
+}
+
+.secRow{
+    position: relative;
+    top: 5px;
+}
+
+.thirdRow{
+    position: relative;
+    top: 10px;
+}
+
+.endRow{
+    position: absolute;
+    right: 0%;
+}
+
+.center{
+    text-decoration: underline;    
+    text-align: center;
+}
+
+/* Button style*/
+/* Press button */
+.button{
+    background-color: darkcyan; 
+    border: none;
+    color: white;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: #165269;
+}
+
+/* Stop button */
+.buttonStopDefault{
+    position: absolute;
+    right: 0%;
+    color: rgb(5, 5, 5);
+    background-color: rgb(250, 156, 156);
+}
+
+.buttonStopDefault:hover{
+    background-color: rgb(255, 113, 113);
+}
+
+.buttonStopSelected{
+    position: absolute;
+    right: 0%;
+    background-color: rgb(255, 0, 0); 
+}
+
+.buttonStopSelected:hover{
+    background-color: rgb(180, 0, 0);
+}
+
+/* Algorithms button */
+.buttonAlgorithmDefault{
+    background-color: blueviolet;
+}
+
+.buttonAlgorithmDefault:hover{
+    background-color: purple;
+}
+
+.buttonAlgorithmSelected{
+    background-color: rgb(29, 196, 43);
+}
+
+.buttonAlgorithmSelected:hover{
+    background-color: rgb(29, 196, 43);
+}
+
+
+/* Range slider button */
+.slider {
+    background-color: darkcyan;
+    width: 110px;
+    cursor: pointer;
+}
+
+.rangeSlider{
+    padding-right: 10%;
+    padding-left: 10%;
+    display: inline-block;
+    left: 20%;
+}
+
+.speedSlider{
+    display: inline-block;
+    left: 40%;    
+}
+
+/* Columns style */
+div.columns{   
+    width: 100%; 
+    display: inline-block;
+    margin: 0px;
+}
+div.columns div{
+    width: 1%;
+    height: 100px; 
+    float: left;    
+    box-sizing: border-box;
+    border: 2px solid rgb(195, 248, 255);
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+div.col0 { background-color: #ffa500; }
+div.col1 { background-color: #ffa500; }
+div.col2 { background-color: #ffa500; }
+div.col3 { background-color: #ffa500; }
+div.col4 { background-color: #ffa500; }
+div.col5 { background-color: #ffa500; }
+div.col6 { background-color: #ffa500; }
+div.col7 { background-color: #ffa500; }
+div.col8 { background-color: #ffa500; }
+div.col9 { background-color: #ffa500; }
+div.col10 { background-color: #ffa500; }
+div.col11 { background-color: #ffa500; }
+div.col12 { background-color: #ffa500; }
+div.col13 { background-color: #ffa500; }
+div.col14 { background-color: #ffa500; }
+div.col15 { background-color: #ffa500; }
+div.col16 { background-color: #ffa500; }
+div.col17 { background-color: #ffa500; }
+div.col18 { background-color: #ffa500; }
+div.col19 { background-color: #ffa500; }
+div.col20 { background-color: #ffa500; }
+div.col21 { background-color: #ffa500; }
+div.col22 { background-color: #ffa500; }
+div.col23 { background-color: #ffa500; }
+div.col24 { background-color: #ffa500; }
+div.col25 { background-color: #ffa500; }
+div.col26 { background-color: #ffa500; }
+div.col27 { background-color: #ffa500; }
+div.col28 { background-color: #ffa500; }
+div.col29 { background-color: #ffa500; }
+div.col30 { background-color: #ffa500; }
+div.col31 { background-color: #ffa500; }
+div.col32 { background-color: #ffa500; }
+div.col33 { background-color: #ffa500; }
+div.col34 { background-color: #ffa500; }
+div.col35 { background-color: #ffa500; }
+div.col36 { background-color: #ffa500; }
+div.col37 { background-color: #ffa500; }
+div.col38 { background-color: #ffa500; }
+div.col39 { background-color: #ffa500; }
+div.col40 { background-color: #ffa500; }
+div.col41 { background-color: #ffa500; }
+div.col42 { background-color: #ffa500; }
+div.col43 { background-color: #ffa500; }
+div.col44 { background-color: #ffa500; }
+div.col45 { background-color: #ffa500; }
+div.col46 { background-color: #ffa500; }
+div.col47 { background-color: #ffa500; }
+div.col48 { background-color: #ffa500; }
+div.col49 { background-color: #ffa500; }
+div.col50 { background-color: #ffa500; }
+div.col51 { background-color: #ffa500; }
+div.col52 { background-color: #ffa500; }
+div.col53 { background-color: #ffa500; }
+div.col54 { background-color: #ffa500; }
+div.col55 { background-color: #ffa500; }
+div.col56 { background-color: #ffa500; }
+div.col57 { background-color: #ffa500; }
+div.col58 { background-color: #ffa500; }
+div.col59 { background-color: #ffa500; }
+div.col60 { background-color: #ffa500; }
+div.col61 { background-color: #ffa500; }
+div.col62 { background-color: #ffa500; }
+div.col63 { background-color: #ffa500; }
+div.col64 { background-color: #ffa500; }
+div.col65 { background-color: #ffa500; }
+div.col66 { background-color: #ffa500; }
+div.col67 { background-color: #ffa500; }
+div.col68 { background-color: #ffa500; }
+div.col69 { background-color: #ffa500; }
+div.col70 { background-color: #ffa500; }
+div.col71 { background-color: #ffa500; }
+div.col72 { background-color: #ffa500; }
+div.col73 { background-color: #ffa500; }
+div.col74 { background-color: #ffa500; }
+div.col75 { background-color: #ffa500; }
+div.col76 { background-color: #ffa500; }
+div.col77 { background-color: #ffa500; }
+div.col78 { background-color: #ffa500; }
+div.col79 { background-color: #ffa500; }
+div.col80 { background-color: #ffa500; }
+div.col81 { background-color: #ffa500; }
+div.col82 { background-color: #ffa500; }
+div.col83 { background-color: #ffa500; }
+div.col84 { background-color: #ffa500; }
+div.col85 { background-color: #ffa500; }
+div.col86 { background-color: #ffa500; }
+div.col87 { background-color: #ffa500; }
+div.col88 { background-color: #ffa500; }
+div.col89 { background-color: #ffa500; }
+div.col90 { background-color: #ffa500; }
+div.col91 { background-color: #ffa500; }
+div.col92 { background-color: #ffa500; }
+div.col93 { background-color: #ffa500; }
+div.col94 { background-color: #ffa500; }
+div.col95 { background-color: #ffa500; }
+div.col96 { background-color: #ffa500; }
+div.col97 { background-color: #ffa500; }
+div.col98 { background-color: #ffa500; }
+div.col99 { background-color: #ffa500; }
